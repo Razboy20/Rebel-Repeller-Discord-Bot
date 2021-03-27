@@ -37,7 +37,7 @@ schedule.scheduleJob("*/5 * * * * *", () => {
             const message: Message = await (channel as TextChannel).messages.fetch(ping.messageId);
             if (!message) return;
 
-            await (channel as TextChannel).send(`<a:peepoclap:752066314092281856> <@214748527669018625>: Reverse Clumsy ping from <${message.reference}>`);
+            await message.reply(`<a:peepoclap:752066314092281856> Reverse Clumsy ping from <${message.reference}>`);
         }
     });
 });
